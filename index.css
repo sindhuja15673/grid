@@ -1,0 +1,33 @@
+.layout{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-areas: 
+    "h h h h h"
+    "sb1 m m m sb2"
+    "f f f f f";
+    grid-template-rows: 10vh 80vh 10vh;
+
+}
+.content1{
+    grid-area: h;
+}
+.content5{
+    grid-area: f;
+}
+.content2{
+    grid-area: sb1;
+}
+.content3{
+    grid-area: m;
+}
+.content4{
+    grid-area: sb2;
+}
+.layout div{
+    background-color: pink;
+    border: 1px solid black;
+    font-size: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
